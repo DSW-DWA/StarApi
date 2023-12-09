@@ -13,7 +13,10 @@ namespace StarApi.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Получить все логи
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<Audit> GetAllAudit()
         {
