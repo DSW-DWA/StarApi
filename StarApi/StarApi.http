@@ -1,0 +1,6 @@
+@StarApi_HostAddress = http://localhost:5017
+
+GET {{StarApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
