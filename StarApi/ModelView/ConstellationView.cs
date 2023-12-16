@@ -23,5 +23,15 @@
         public string? History { get; set; }
 
         public GalaxyViewView Galaxy { get; set; }
+
+        public ConstellationView(Guid id, string name, string shape, string abbreviation, string history, Guid galaxyId, string galaxyName)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Shape = shape;
+            this.Abbreviation = abbreviation;
+            this.History = history;
+            this.Galaxy = new GalaxyViewView(galaxyId, galaxyName);
+        }
     }
 }
