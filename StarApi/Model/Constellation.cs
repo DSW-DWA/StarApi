@@ -21,7 +21,7 @@ public partial class Constellation
 
     public virtual ICollection<Star> Stars { get; set; } = new List<Star>();
 
-    public Constellation(Guid id, Guid galaxyId, string name, string shape, string abbreviation, string history)
+    public Constellation(Guid id, Guid? galaxyId, string name, string shape, string abbreviation, string history)
     {
         this.Id = id;
         this.GalaxyId = galaxyId;
