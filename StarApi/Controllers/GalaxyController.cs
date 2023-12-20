@@ -10,7 +10,7 @@ namespace StarApi.Controllers
     {
         public string Name { get; set; }
         public Guid UniverseId { get; set; }
-        public int Size { get; set; }
+        public double Size { get; set; }
         public string Shape { get; set; }
         public string Composition { get; set; }
         public double DistanceFromEarth { get; set; }
